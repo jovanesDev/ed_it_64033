@@ -53,6 +53,7 @@ const Feed = () => {
 
     // }
 
+    
 
 
     // Ciclo de vida que tiene 3 estados posbiles 
