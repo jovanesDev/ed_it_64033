@@ -1,4 +1,6 @@
 import React from "react";
+import Counter from "./Counter/Counter";
+import Feed from "./Feed/Feed";
 // import Navbar from "./Navbar/Navbar";
 // import Asaid from "./Asaid/Asaid";
 // import Container from "./Container/Container";
@@ -10,9 +12,11 @@ import React from "react";
 const Main = (props) => {
   return (
     <main
-      style={{ minHeight: "100vh" }}
-      className="d-flex flex-column justify-content-around"
+      // style={{ minHeight: "100vh" }}
+      // className="d-flex flex-column justify-content-around"
     >
+      <Counter/>
+      <Feed/>
 
     </main>
   );
