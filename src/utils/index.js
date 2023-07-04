@@ -1,0 +1,22 @@
+export  const catalogo = [
+    {
+        id:'1',
+        text:"audi",
+        img:'https://cdn.motor1.com/images/mgl/eolVnN/s1/img_1350.jpg'
+    },
+    {
+        id:'2',
+        text:"mercedes",
+        img:'https://www.megautos.com/wp-content/uploads/2023/03/Mercedes-Benz-GLC-Coupe-2024-dinamica.jpg'
+    },
+    {
+        id:'3',
+        text:"BMW",
+        img:'https://cdn.motor1.com/images/mgl/PEj9W/s1/lanzamiento-bmw-320i-sportline.jpg'
+    },
+    {
+        id:'4',
+        text:"audi",
+        img:'https://www.topgear.com/sites/default/files/cars-car/image/2019/09/ttsc0048.jpg'
+    },
+]

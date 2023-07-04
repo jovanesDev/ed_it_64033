@@ -10,7 +10,7 @@ import RopaCombinada from '../views/Ropa/RopaCombinada'
 const MainNavigation = () => {
   return (
     <BrowserRouter>
-    <Navbar/>
+        <Navbar/>
         <Routes>
             <>
             {routes.map(({path,Element},index) => (
@@ -22,9 +22,7 @@ const MainNavigation = () => {
                     <Route path='mujer' element={<RopaMujer/>}/>
             </Route>
             </>
-
         </Routes>
-
     </BrowserRouter>
   )
 }

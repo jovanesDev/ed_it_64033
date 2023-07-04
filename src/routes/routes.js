@@ -32,9 +32,9 @@ export const routes = [
     //     path:'/ropa',
     //     Element:Ropa
     // },
-    {
-        path:'*',
-        Element:Navigate
-    }
+    // {
+    //     path:'*',
+    //     Element:Navigate
+    // }
 ]
 
