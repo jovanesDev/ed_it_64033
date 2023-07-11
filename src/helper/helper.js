@@ -1,0 +1,1 @@
+ export const tirarAlerta = () => alert('Hola Mundo')

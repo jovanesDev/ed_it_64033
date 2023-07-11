@@ -1,21 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { ProductosContext } from '../context/ProductosProvider'
+import React from 'react'
+import useCounter from '../hooks/useCounter'
 
 const ItemCounter = (props) => {
     const {producto} = props
-    const { handleAddCarrito } = useContext(ProductosContext)
-    const [counter, setCounter] = useState(1)
-
-    const handleSum = () => {
-        setCounter(counter + 1)
-    }
-
-    const handleRestar = () => {
-        if (counter > 1) {
-            setCounter(counter - 1)
-        }
-    }
-
+    const {counter,disabled,handleSum,handleRestar,handleAddCarrito} = useCounter()
     return (
         <div>
             <div className='d-flex justify-content-around my-3 '>
@@ -28,7 +16,7 @@ const ItemCounter = (props) => {
                 </div>
             </div>
             <div className='d-flex my-4'>
-                <button onClick={() => handleAddCarrito({ ...producto, cantidad: counter })} className='mx-auto btn btn-success'>
+                <button disabled={disabled} onClick={() => handleAddCarrito({ ...producto, cantidad: counter })} className='mx-auto btn btn-success'>
                     Agregar al carrito </button>
             </div>
         </div>
