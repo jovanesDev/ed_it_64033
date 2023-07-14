@@ -1,0 +1,14 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "name": "Tarea 1",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "name": "Tarea 3",
+      "complete": true
+    }
+  ]
+}
