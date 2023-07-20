@@ -5,15 +5,23 @@ const WithAxiosFunctions = (BaseComponente) => {
 
     const [tareas, setTareas] = useState([])
     const [loading, setLoading] = useState(true)
+    const [showForm, setShowForm] = useState(false)
 
     useEffect(() => {
         getTareas()
     },[])
+    
+    const changeShowForm = () => setShowForm(!showForm)
 
     async function getTareas() {
         const res = await axios.get('http://localhost:3001/tareas')
         setTareas(res.data)
         setLoading(false)
+    }
+
+    async function guardarTarea(tarea){
+      const result =  await axios.post('http://localhost:3001/tareas',tarea)
+      setTareas([...tareas,result.data])
     }
 
     async function deleteTarea(id){
@@ -39,6 +47,9 @@ const WithAxiosFunctions = (BaseComponente) => {
             loading={loading} 
             deleteTarea={deleteTarea} 
             updateTarea={updateTarea}
+            guardarTarea={guardarTarea}
+            showForm={showForm}
+            changeShowForm={changeShowForm}
            />
   }
 }
