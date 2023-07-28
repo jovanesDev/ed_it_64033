@@ -8,11 +8,3 @@ export const fetchProductos = createAsyncThunk(
       return response.data
     }
   )
-
-export const deleteProducto = createAsyncThunk(
-    'producto/deleteProducto',
-    async (id) => {
-        const response = await axios.delete('http://localhost:3001/producto' + id);
-        return response.data
-    }
-)
