@@ -1,0 +1,30 @@
+{
+    "productos":[
+        {
+            "id":"1",
+            "nombre":"Iphone",
+            "version":"11 pro max",
+            "precio":"300000"
+        },
+        {
+            "id":"2",
+            "nombre":"Iphone",
+            "version":"12 pro max",
+            "precio":"350000"
+        },
+        {
+            "id":"3",
+            "nombre":"Iphone",
+            "version":"13 pro max",
+            "precio":"400000"
+        },
+        {
+            "id":"4",
+            "nombre":"Iphone",
+            "version":"14 pro max",
+            "precio":"500000"
+        }
+         
+         
+    ]
+}
