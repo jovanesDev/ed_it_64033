@@ -1,7 +1,7 @@
-import Navigation from './routes/Navigation';
+// import Navigation from './routes/Navigation';
 
 function App() {
-  return <Navigation/>
+  return <h1>Redux RKT</h1>
 }
 
 export default App;
