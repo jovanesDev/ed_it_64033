@@ -23,8 +23,12 @@
             "nombre":"Iphone",
             "version":"14 pro max",
             "precio":"500000"
-        }
-         
-         
+        },  
+        {
+            "id":"5",
+            "nombre":"Iphone",
+            "version":"8",
+            "precio":"120000"
+        }  
     ]
 }
